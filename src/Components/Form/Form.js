@@ -20,8 +20,7 @@ const Form = ({ addStudent }) => {
             favoriteBands: favoriteBands,
             favoriteFoods: favoriteFoods,
             pets: pets,
-            location: location,
-            image: image
+            location: location
         }
         if(!name || !favoriteBands || !favoriteFoods || !pets || !location) {
             setError('Please Add Student Information')

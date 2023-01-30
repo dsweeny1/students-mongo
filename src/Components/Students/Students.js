@@ -4,9 +4,7 @@ import './Students.css'
 import PropTypes from 'prop-types';
 
 const Students = ({ students, deleteStudent }) => {
-    console.log(students)
     const studentCards = students.map(student => {
-        console.log(student._id)
         return (
             <section>
                 <StudentCard 

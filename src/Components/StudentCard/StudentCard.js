@@ -3,7 +3,6 @@ import './StudentCard.css'
 import PropTypes from 'prop-types';
 
 const StudentCard = ({ id, name, favoriteBands, favoriteFoods, location, pets, image, deleteStudent }) => {
-    console.log(id)
     const [flip, setFlip] = useState(false)
         return (
             <div>
