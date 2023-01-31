@@ -55,8 +55,6 @@ Student Flashcards is the final project for Mod 3, built in week 17 of [Turing S
 
 # Getting Started
 
-You can find the project [here](https://github.com/dsweeny1/Student-Flashcards-final), along with the [API repo](https://github.com/dsweeny1/final-project-api) built with Express.js and follow the instructions below to get started.
-
 ### Installation
 
 1. Clone both repos, making sure to add them to their own directories
