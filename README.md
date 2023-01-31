@@ -87,7 +87,6 @@ You can find the project [here](https://github.com/dsweeny1/Student-Flashcards-f
 Future Iterations:
 
 - [ ] Allow for cohorts to be saved to a list
-- [ ] Build out complete backend
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
