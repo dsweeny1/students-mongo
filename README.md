@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# flashcards-mongo<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [About The Project](#about-the-project)
+- [Project Spec](#project-spec)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
+- [Reflections](#reflections)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## About The Project
+Students Mongo is a continuation of [Student Flashcards](https://github.com/dsweeny1/Student-Flashcards-final). The application will allow Turing instructors to get to know their students better! Instructors can add their students faces using their slack profile pictures and add a few quick facts about them. Students Mongo uses the database from [Flashcards Mongo](https://github.com/dsweeny1/flashcards-mongo) that provides a database using MongoDB.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Deployed Link](https://student-flashcards-final.vercel.app/)
+![2022-11-12 17 59 46](https://user-images.githubusercontent.com/11345457/201500572-140f2bc8-eacb-4cab-9b4e-56c2805ce8fe.gif)
+![2022-11-12 18 02 59](https://user-images.githubusercontent.com/11345457/201500618-29ee3b1d-e2ee-40ef-903a-6b85cbd26f3f.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Original Project Spec
 
-### `npm run build`
+Student Flashcards is the final project for Mod 3, built in week 17 of [Turing School of Software and Design](https://turing.edu/) front-end engineering program. The goals of this [solo project](https://frontend.turing.edu/projects/module-3/showcase.html) were to:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Utilize React and React Router
+- Test the UI/UX using Cypress
+- Utilize Lighthouse and Wave for accessibility
+- Make network requests to API endpoints to retrieve and manipulate data
+- Implement error handling
+- Create a fullstack application using MongoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-### `npm run eject`
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone both repos, making sure to add them to their own directories
+   ```sh
+   git clone git@github.com:dsweeny1/final-project-api.git
+   ```
+   ```sh
+   git clone gitgit@github.com:dsweeny1/Student-Flashcards-final.git
+   ```
+2. For Student Flashcards: Install NPM packages
+   ```sh
+   npm install
+   npm start
+   ```
+   For API Repo: Install NPM packages
+   ```sh
+   npm install
+   node server.js
+   ```
+3. Explore the website.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- USAGE EXAMPLES -->
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Future Iterations:
 
-### Analyzing the Bundle Size
+- [ ] Allow for cohorts to be saved to a list
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Making a Progressive Web App
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+I utilized tesing to create a smooth user experience using [Cypress](https://www.cypress.io/).
 
-### Advanced Configuration
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- CONTACT -->
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Danielle Sweeny - [LinkedIn](https://www.linkedin.com/in/danielle-sweeny-75b50b84/) [GitHub](https://github.com/dsweeny1)
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+The following resources helped us build this project:
+
+[![MDN Docs][mdn-shield]][mdn]
+[![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Reflections
+### Wins:
+- Successfully self-teaching and implementing Express API and MongoDB.
+- Deepening my CSS abilities
+
+### Challenges:
+- Implementing the card flip
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[mdn-shield]: https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white
+[mdn]: https://developer.mozilla.org/en-US/
+[contributors-shield]: https://img.shields.io/badge/Contributors-3-2ea44f?style=for-the-badge
+[product-screenshot]: images/screenshot.png
