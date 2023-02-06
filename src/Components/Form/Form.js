@@ -20,9 +20,10 @@ const Form = ({ addStudent }) => {
             favoriteBands: favoriteBands,
             favoriteFoods: favoriteFoods,
             pets: pets,
-            location: location
+            location: location,
+            image: image
         }
-        if(!name || !favoriteBands || !favoriteFoods || !pets || !location) {
+        if(!name || !favoriteBands || !favoriteFoods || !pets || !location || !image) {
             setError('Please Add Student Information')
         } else {
             setError('')
@@ -90,7 +91,10 @@ const Form = ({ addStudent }) => {
                     value={image}
                     onChange={event => setImage(event.target.value)}
                 />
-                <label>*Optional</label>
+                <label>*Required</label>
+                <label className='slack-image'>
+                    <b>Use https://ca.slack-edge.com/T029P2S9M-U02Q8JAJW0P-g654fec14191-512 If No Image Available</b>
+                </label>
                 <button className='submit-button' onClick={(event) => submitNewStudent(event)}>Add Student</button>
                 <p>{error}</p>
             </form>

@@ -37,3 +37,8 @@ input {
     color:rgb(194, 24, 81);
     margin-left: 9px;
   }
+
+  .slack-image {
+    background-color: white;
+    width: 30.5%;
+  }

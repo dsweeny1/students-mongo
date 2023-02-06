@@ -11,7 +11,7 @@ function App() {
   const [error, setError] = useState(false)
 
   const getStudents = async () => {
-    const url = (`http://localhost:3000/api/v1/students`)
+    const url = (`https://flashcards-mongo.vercel.app`)
     try {
       const response = await fetch(url)
       const allStudents = await response.json()
@@ -34,7 +34,7 @@ function App() {
     // console.log(id)
     const deletedStudent = students.filter(student => student._id !== id)
     try {
-      const response = fetch(`http://localhost:3000/api/v1/students/${id}`, {
+      const response = fetch(`https://flashcards-mongo.vercel.app/${id}`, {
         'method': 'DELETE'
       });
       if (!response.ok) {
@@ -52,14 +52,15 @@ function App() {
   const addStudent = (newStudent) => {
     console.log(newStudent)
     try {
-      const response = fetch('http://localhost:3000/api/v1/students', {
+      const response = fetch('https://flashcards-mongo.vercel.app', {
         method: 'POST',
         body: JSON.stringify({
           name: newStudent.name,
           favoriteBands: newStudent.favoriteBands,
           favoriteFoods: newStudent.favoriteFoods,
           pets: newStudent.pets,
-          location: newStudent.location
+          location: newStudent.location,
+          image: newStudent.image
         }),
         headers: {
           'Content-Type': 'application/JSON'
