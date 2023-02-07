@@ -11,7 +11,7 @@ function App() {
   const [error, setError] = useState(false)
 
   const getStudents = async () => {
-    const url = (`https://flashcards-mongo.vercel.app`)
+    const url = (`https://flashcards-mongo.vercel.app/students`, {mode: 'no-cors'})
     try {
       const response = await fetch(url)
       const allStudents = await response.json()
@@ -34,7 +34,7 @@ function App() {
     // console.log(id)
     const deletedStudent = students.filter(student => student._id !== id)
     try {
-      const response = fetch(`https://flashcards-mongo.vercel.app/${id}`, {
+      const response = fetch(`https://flashcards-mongo.vercel.app/students/${id}`, {
         'method': 'DELETE'
       });
       if (!response.ok) {
@@ -52,7 +52,7 @@ function App() {
   const addStudent = (newStudent) => {
     console.log(newStudent)
     try {
-      const response = fetch('https://flashcards-mongo.vercel.app', {
+      const response = fetch('https://flashcards-mongo.vercel.app/students', {
         method: 'POST',
         body: JSON.stringify({
           name: newStudent.name,
