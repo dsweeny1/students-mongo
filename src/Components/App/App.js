@@ -19,7 +19,7 @@ function App() {
         setError(true)
         throw new Error(response.status)
       }
-      console.log(response)
+      console.log(allStudents)
       setStudents(allStudents)
     } catch(error) {
       console.log({message: error.message})
