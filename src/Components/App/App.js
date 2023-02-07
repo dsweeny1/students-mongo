@@ -11,7 +11,7 @@ function App() {
   const [error, setError] = useState(false)
 
   const getStudents = async () => {
-    const url = (`https://flashcards-mongo.vercel.app/students`, {mode: 'no-cors'})
+    const url = (`https://flashcards-mongo.vercel.app/`, {mode: 'no-cors'})
     try {
       const response = await fetch(url)
       const allStudents = await response.json()
