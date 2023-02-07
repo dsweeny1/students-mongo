@@ -11,20 +11,18 @@ function App() {
   const [error, setError] = useState(false)
 
   const getStudents = async () => {
-    const url = (`https://flashcards-mongo.vercel.app/`, {mode: 'no-cors'})
+    const url = (`http://localhost:3000/api/v1/students`)
     try {
       const response = await fetch(url)
-      const allStudents = await response.json()
+      const data = await response.json()
       if (!response.ok) {
         setError(true)
         throw new Error(response.status)
       }
-      console.log(allStudents)
-      setStudents(allStudents)
+      setStudents(data)
     } catch(error) {
       console.log({message: error.message})
     }
-    console.log(students)
   }
 
   useEffect(() => {
@@ -32,10 +30,9 @@ function App() {
   }, [])
 
   const deleteStudent = (id) => {
-    // console.log(id)
     const deletedStudent = students.filter(student => student._id !== id)
     try {
-      const response = fetch(`https://flashcards-mongo.vercel.app/students/${id}`, {
+      const response = fetch(`http://localhost:3000/api/v1/students/${id}`, {
         'method': 'DELETE'
       });
       if (!response.ok) {
@@ -53,7 +50,7 @@ function App() {
   const addStudent = (newStudent) => {
     console.log(newStudent)
     try {
-      const response = fetch('https://flashcards-mongo.vercel.app/students', {
+      const response = fetch('http://localhost:3000/api/v1/students', {
         method: 'POST',
         body: JSON.stringify({
           name: newStudent.name,
@@ -70,7 +67,6 @@ function App() {
         throw new Error(response.status)
       }
       const data = response.json();
-      console.log(data)
       return data;
     }
     catch (error) {
