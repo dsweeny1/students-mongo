@@ -21,7 +21,7 @@ function App() {
       }
       setStudents(allStudents)
     } catch(error) {
-      console.log(error)
+      console.log({message: error.message})
     }
     console.log(students)
   }
